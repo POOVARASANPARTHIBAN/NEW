@@ -1,0 +1,20 @@
+/* selecting based on html tag */
+/* pseudo class and element */
+a:link{
+    font-size: 35px;
+    text-decoration: none;
+    color: goldenrod;
+}
+a:visited{
+    color: aquamarine;
+}
+a:hover{
+    color: blue;
+}
+/* a:active{
+
+} */
+
+.dropdown-content a{
+    display:none;
+}

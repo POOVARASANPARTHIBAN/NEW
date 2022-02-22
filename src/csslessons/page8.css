@@ -1,0 +1,22 @@
+section p{
+    color: red;
+}
+
+section >p{
+    color: orange;
+}
+/* adjacent sibling + select all immediate element */
+/* selects immediately following sibling of specified element */
+
+ h1 + p{
+    color: yellow;
+    background-color: blue;
+}
+
+h1 ~ p{
+    background-color: rgb(49,5,46);
+}
+
+/* h1 > p{
+    background-color: antiquewhite;
+}  */
