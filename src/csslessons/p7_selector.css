@@ -9,17 +9,22 @@ h3{
     background-color: blue;
     color: white;
 }
+/*grouping of elements*/
 
 h1,h3{
     color: white;
 }
-/* 
+
 ul li{
     color: red;
-} */
+} 
+/* contextual selectors" in css allow you to specify different styles for different parts of your document.
+you can assign styles directly to specific HTML tags,
+or you can create independent classes and assign them to tag in the HTML 
+either approach lets you mix and match style */
 
 /* selecting parent child */
-ul>li{
+ul > li{
     color: blue;
 }
 li{

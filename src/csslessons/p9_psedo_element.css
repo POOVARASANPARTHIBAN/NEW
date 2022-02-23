@@ -6,14 +6,14 @@ a:link{
     color: goldenrod;
 }
 a:visited{
-    color: aquamarine;
+    color: brown;
 }
 a:hover{
     color: blue;
 }
-/* a:active{
-
-} */
+a:active{
+    color: red;
+} 
 
 .dropdown-content a{
     display:none;
