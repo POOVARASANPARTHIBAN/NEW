@@ -13,9 +13,9 @@
 
 }
 
-img{
+ img{
     max-width: 100%;
-}
+} 
 
 body{
     font-family: "Outfit", sans-serif;
@@ -27,7 +27,7 @@ body{
     justify-content: center;
     height: calc(100vh - 1px);
     margin: 1.25rem;
-}
+} 
 
 .container{
     background-color: var(--White);
