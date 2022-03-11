@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap");
+
+:root {
+  --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --font1: "Bai Jamjuree", sans-serif;
+  --Grayish-Blue: hsl(201, 11%, 66%);
+  --Light-Blue: hsl(233, 100%, 69%);
+  --Strong-Cyan: hsl(171, 66%, 44%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  color: var(--Dark-Grayish-Blue);
+  font-family: var(--font1);
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  color: var(--Grayish-Blue);
+  max-width: 540px;
+  margin: 0 auto;
+  padding-bottom: 4rem;
+  text-align: center;
+}
+
+header {
+  align-items: center;
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.btn {
+  border-radius: 44px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+  color: white;
+  height: 3rem;
+  transition: all 0.3s ease 0s;
+  width: 12rem;
+}
+
+.btn:hover {
+  background-color: lightgreen;
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
+
+.btn-g {
+  background-color: var(--Strong-Cyan);
+}
+
+.btn-b {
+  background-color: var(--Light-Blue);
+}
+
+.content-one {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 5rem 0 5rem 0;
+  text-align: center;
+}
+
+.content-two {
+  padding-bottom: 5rem;
+  width: 100%;
+}
+
+.computer {
+  float: left;
+  width: 50%;
+}
+
+.desc h2 {
+  padding-left: 60%;
+  width: 100%;
+}
+
+.desc p {
+  display: inline-flex;
+  padding: 0rem 0rem 5rem 8rem;
+  text-align: left;
+  width: 500px;
+}
+
+.clipboard h2 {
+  font-weight: bold;
+  text-align: center;
+}
+
+.clipboard p {
+  padding-bottom: 5rem;
+}
+
+.tab {
+  margin: 0rem 19rem;
+  padding-bottom: 5rem;
+  text-align: center;
+  width: 55%;
+}
+
+.tools {
+  padding-bottom: 3rem;
+}
+
+.card {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  margin: 0rem 10rem;
+  padding-bottom: 3rem;
+  text-align: center;
+}
+
+.brand {
+  column-gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 0 10rem;
+  padding-bottom: 7rem;
+}
+
+.os {
+  padding-bottom: 6rem;
+  text-align: center;
+}
+
+footer {
+  background-color: var(--Grayish-Blue);
+  padding: 0 30px;
+}
+
+footer .foot {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.foot .logo {
+  height: 50px;
+  margin: 0 70px;
+  width: 50px;
+}
+
+.foot ul {
+  list-style: none;
+  max-width: 400px;
+}
+
+ul li {
+  display: inline-block;
+  margin: 5px 20px;
+}
+
+a {
+  color: var(--Dark-Grayish-Blue);
+  text-decoration: none;
+}
+.social_link a {
+  padding: 0.75rem;
+}

@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+:root {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  color: var(--very-dark-desaturated-blue);
+  font-family: "Kumbh sans", sans-serif;
+  font-size: 18px;
+}
+.profilecard {
+  align-items: center;
+  background: var(--dark-cyan);
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-position: -90% -500px, 170% 400px;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+.card {
+  background: white;
+  border-radius: 20px;
+  max-width: 400px;
+  overflow: hidden;
+  text-align: center;
+}
+.card-header {
+  background: url(../images/bg-pattern-card.svg);
+  background-size: cover;
+  height: 200px;
+  width: 400px;
+}
+.image {
+  border: 5px solid white;
+  border-radius: 50%;
+  height: 100px;
+  margin: -50px auto -30px auto;
+  overflow: hidden;
+  width: 100px;
+}
+.image img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+.card-body {
+  height: 250px;
+  line-height: 1.8rem;
+  margin-top: 54px;
+  margin-bottom: -75px;
+}
+.name {
+  font-size: 1.4rem;
+}
+.age {
+  color: hsl(0, 0%, 59%);
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+.city {
+  color: hsl(0, 0%, 59%);
+  font-size: 1.3rem;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.card-lower {
+  align-items: center;
+  border-top: 2px solid hsl(0, 10%, 88%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 40px;
+  padding-top: 22px;
+  padding-right: 40px;
+}
+.card-lower .part {
+  color: hsl(0, 0%, 59%);
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+.attribution {
+  font-size: 16px;
+  padding: 15px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

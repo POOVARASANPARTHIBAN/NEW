@@ -1,0 +1,109 @@
+:root {
+  --Blue: hsl(212, 86%, 64%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Orange: hsl(34, 97%, 64%);
+  --Red: hsl(0, 78%, 62%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+  font-size: 65%;
+}
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+.header-title {
+  color: var(--Very-Dark-Blue);
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+.header-subtitle {
+  color: var(--Very-Dark-Blue);
+  font-size: 3.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+.header-paragraph {
+  color: var(--Grayish-Blue);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.cards {
+  column-gap: 3rem;
+  display: grid;
+  grid-template-areas:
+    "start mid1 end"
+    "start mid2 end";
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 7.5rem 8% 0;
+}
+.title {
+  color: var(--Very-Dark-Blue);
+  font-size: 3rem;
+}
+.paragraph {
+  color: var(--Grayish-Blue);
+  font-size: 1.5rem;
+}
+.image {
+  display: flex;
+  justify-content: right;
+  padding-top: 3rem;
+}
+.supervisor {
+  align-self: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem 0.5rem #dedede;
+  border-top: 1rem solid var(--Cyan);
+  grid-area: start;
+  margin-bottom: 3rem;
+  padding: 3.5rem 3rem;
+}
+.team-builder {
+  border-radius: 0.5rem;
+  box-shadow: 0rem 1rem 2rem 0.5rem #dedede;
+  border-top: 1rem solid var(--Red);
+  grid-area: mid1;
+  margin-bottom: 3rem;
+  padding: 3.5rem 3rem;
+}
+.karma {
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem 0.5rem #dedede;
+  border-top: 1rem solid var(--Orange);
+  grid-area: mid2;
+  margin-bottom: 3rem;
+  padding: 3.5rem 3rem;
+}
+.calculator {
+  align-self: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 1rem 2rem 0.5rem #dedede;
+  border-top: 1rem solid var(--Blue);
+  grid-area: end;
+  margin-bottom: 3rem;
+  padding: 3.5rem 3rem;
+}
+.attribution {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 5rem;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-weight: 600;
+  text-decoration: none;
+}

@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+body {
+  box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+a:link,
+a:active,
+a:visited,
+a:hover {
+  color: #3f51b5;
+}
+
+.outerdiv {
+  align-items: center;
+  background: #edf2f8;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.innerdiv {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-rows: repeat(2, 22rem);
+  grid-template-columns: repeat(4, 17rem);
+  margin: 1rem;
+  transform: scale(0.9);
+}
+
+.eachdiv {
+  border-radius: 0.8rem;
+  box-shadow: 5px 5px 20px #6d6b6b6b;
+  color: white;
+  padding: 1rem 2rem;
+}
+
+.box1 {
+  background: #733fc8;
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position-x: 25rem;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+
+.box2 {
+  background: #49556b;
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.box3 {
+  background: white;
+  color: black;
+  grid-column: 4/5;
+  grid-row: 1/3;
+}
+
+.box4 {
+  background: white;
+  color: black;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.box5 {
+  background: #18202d;
+  grid-column: 2/4;
+  grid-row: 2/3;
+}
+
+.userdetails {
+  display: flex;
+}
+
+.imgbox {
+  margin-right: 1rem;
+}
+
+.imgbox img {
+  border-radius: 50%;
+  border: 2px solid #cec5c5;
+  width: 2rem;
+}
+
+.detb {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-box p {
+  margin: 0;
+}
+
+.profile-box .name {
+  color: hsl(0, 0%, 81%);
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.1rem;
+}
+
+.profile-box .name.dark {
+  color: #49505a;
+}
+
+.profile-box .designation {
+  color: hsl(0, 0%, 81%);
+  font-size: 0.8rem;
+  opacity: 50%;
+}
+
+.profile-box .designation.dark {
+  color: #49505a;
+}
+
+.review h4 {
+  color: #f3deff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 0.8rem;
+}
+
+.review.dark h4 {
+  color: #4b5258;
+}
+
+.review p {
+  color: #f3deff;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.5;
+  opacity: 50%;
+}
+
+.review.dark p {
+  color: #0e0e0e;
+}
+
+@media only screen and (max-width: 1000px) {
+  .innerdiv {
+    transform: scale(0.7);
+  }
+}
+@media only screen and (max-width: 800px) {
+  .innerdiv {
+    transform: scale(0.6);
+  }
+}
+@media only screen and (max-width: 600px) {
+  .div1 {
+    background-position-x: 10rem;
+  }
+  .innerdiv {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem;
+    margin-bottom: 5rem;
+    transform: scale(1);
+  }
+}
