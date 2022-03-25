@@ -35,14 +35,17 @@ body {
 }
 .card > * {
   flex-basis: 50%;
+  flex-direction: column-reverse;
+  max-width: 60rem;
 }
 .card-content {
   display: grid;
-  padding: 3.5rem;
   place-items: center;
+  padding: 4rem 3rem;
 }
 .card-body {
   width: min(100%, 39rem);
+  text-align: center;
 }
 .card-title {
   color: var(--color-white);
@@ -60,6 +63,7 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   margin-top: 7rem;
+  margin-top: 5rem;
 }
 .stats-item {
   text-transform: uppercase;
@@ -84,22 +88,4 @@ body {
   mix-blend-mode: multiply;
   object-fit: cover;
   width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .card {
-    flex-direction: column-reverse;
-    max-width: 50rem;
-  }
-  .card-body {
-    text-align: center;
-  }
-  .card-content {
-    padding: 4rem 3rem;
-  }
-}
-@media screen and (max-width: 375px) {
-  .stats {
-    grid-template-columns: 1fr;
-    margin-top: 5rem;
-  }
 }

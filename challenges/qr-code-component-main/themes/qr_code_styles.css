@@ -30,6 +30,7 @@ body {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
   padding: 1.25rem;
+  width: 400px;
 }
 .container img {
   border-radius: 0.625rem;
@@ -43,19 +44,4 @@ body {
 .container p {
   color: var(--grayish-blue);
   text-align: center;
-}
-
-.attribution {
-  font-size: 14px;
-  text-align: center;
-}
-
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
-@media (min-width: 500px) {
-  .container {
-    width: 400px;
-  }
 }

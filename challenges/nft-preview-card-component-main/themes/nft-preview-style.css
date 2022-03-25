@@ -32,8 +32,9 @@ body {
 .container {
   background-color: var(--card-bg);
   border-radius: 0.5rem;
-  margin-bottom: 1rem;
   padding: 1.25rem;
+  margin: 0 auto 1rem;
+  width: 450px;
 }
 .main-image {
   position: relative;
@@ -102,17 +103,4 @@ ul li img {
 .poster p span:hover {
   color: var(--cyan);
   cursor: pointer;
-}
-.attribution {
-  font-size: 16px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-@media (min-width: 500px) {
-  .container {
-    margin: 0 auto 1rem;
-    width: 450px;
-  }
 }
